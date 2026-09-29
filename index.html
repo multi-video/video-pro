@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="monetag" content="c8937233eb1c104198ca1b741792a492">
+
+    <title>My Video Site</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #0f0f0f;
+            color: white;
+        }
+
+        header {
+            background: #181818;
+            padding: 18px 30px;
+            border-bottom: 1px solid #292929;
+        }
+
+        header h1 {
+            color: #ff3333;
+            font-size: 26px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 30px 20px;
+        }
+
+        .title {
+            margin-bottom: 25px;
+            font-size: 24px;
+        }
+
+        .videos {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+        }
+
+        .video-card {
+            background: #181818;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+        }
+
+        video {
+            width: 100%;
+            display: block;
+            background: black;
+        }
+
+        .video-info {
+            padding: 15px;
+        }
+
+        .video-info h2 {
+            font-size: 18px;
+            margin-bottom: 8px;
+        }
+
+        .video-info p {
+            color: #aaa;
+            font-size: 14px;
+        }
+
+        footer {
+            text-align: center;
+            color: #777;
+            padding: 40px 20px;
+        }
+
+        @media (max-width: 600px) {
+            header {
+                padding: 15px 20px;
+            }
+
+            .container {
+                padding: 20px 15px;
+            }
+
+            .title {
+                font-size: 21px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>🎬 My Video Site</h1>
+    </header>
+
+    <main class="container">
+
+        <h2 class="title">Latest Videos</h2>
+
+        <div class="videos">
+
+
+
+
+            <!-- Video 2 -->
+            <div class="video-card">
+                <video controls poster="">
+                    <source src="video2.mp4" type="video/mp4">
+                    তোমার browser ভিডিওটি চালাতে পারছে না।
+                </video>
+
+                <div class="video-info">
+                    <h2>আমার দ্বিতীয় ভিডিও</h2>
+                    <p>My Video • 2026</p>
+                </div>
+            </div>
+
+
+            <!-- Video 3 -->
+            <div class="video-card">
+                <video controls poster="">
+                    <source src="video3.mp4" type="video/mp4">
+                    তোমার browser ভিডিওটি চালাতে পারছে না।
+                </video>
+
+                <div class="video-info">
+                    <h2>আমার তৃতীয় ভিডিও</h2>
+                    <p>My Video • 2026</p>
+                </div>
+            </div>
+
+        </div>
+
+    </main>
+
+    <footer>
+        © 2026 My Video Site
+    </footer>
+
+</body>
+</html>
